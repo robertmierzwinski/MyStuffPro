@@ -1,0 +1,14 @@
+{
+  "title": "MyStuffPro",
+  "config": {
+    "step": {
+      "user": {
+        "title": "MyStuffPro",
+        "description": "Utwórz wspólny domowy inwentarz. Panel MyStuffPro pojawi się w menu bocznym. Dane ze starej strony możesz zaimportować w ustawieniach panelu."
+      }
+    },
+    "abort": {
+      "already_configured": "MyStuffPro jest już skonfigurowane."
+    }
+  }
+}

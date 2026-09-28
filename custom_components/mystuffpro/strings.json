@@ -1,0 +1,14 @@
+{
+  "title": "MyStuffPro",
+  "config": {
+    "step": {
+      "user": {
+        "title": "MyStuffPro",
+        "description": "Create a shared household inventory. MyStuffPro will appear in the sidebar. Import your existing JSON data in the panel settings. The inventory panel is in Polish."
+      }
+    },
+    "abort": {
+      "already_configured": "MyStuffPro is already configured."
+    }
+  }
+}

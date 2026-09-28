@@ -1,0 +1,21 @@
+{
+  "domain": "mystuffpro",
+  "name": "MyStuffPro",
+  "version": "1.0.0",
+  "config_flow": true,
+  "integration_type": "service",
+  "iot_class": "calculated",
+  "dependencies": [
+    "frontend",
+    "http",
+    "panel_custom",
+    "websocket_api"
+  ],
+  "requirements": [],
+  "codeowners": [
+    "@robertmierzwinski"
+  ],
+  "single_config_entry": true,
+  "documentation": "https://github.com/robertmierzwinski/MyStuffPro",
+  "issue_tracker": "https://github.com/robertmierzwinski/MyStuffPro/issues"
+}

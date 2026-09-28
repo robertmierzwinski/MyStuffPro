@@ -1,0 +1,6 @@
+"""Constants for MyStuffPro."""
+DOMAIN = "mystuffpro"
+NAME = "MyStuffPro"
+SIGNAL_CHANGED = "mystuffpro_changed"
+PANEL_PATH = "mystuffpro"
+VERSION = "1.0.0"
