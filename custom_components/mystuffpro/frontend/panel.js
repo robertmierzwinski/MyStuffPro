@@ -73,7 +73,7 @@ class MyStuffProPanel extends HTMLElement {
   }
   render() {
     const root = this.shadowRoot;
-    root.innerHTML = `<link rel="stylesheet" href="/mystuffpro_static/style.css?v=1.0.0">
+    root.innerHTML = `<link rel="stylesheet" href="/mystuffpro_static/style.css?v=1.0.1">
       <header class="topbar"><div class="topbar-inner">
         <button class="menu" id="menu" aria-label="Otwórz menu Home Assistant">☰</button>
         <strong class="brand">📦 MyStuffPro</strong>
@@ -124,7 +124,7 @@ class MyStuffProPanel extends HTMLElement {
   }
   renderSettings() {
     this.shadowRoot.querySelector('#content').innerHTML = `<h1>Ustawienia</h1><section class="card settings-card"><div class="card-head-block"><h2>Wygląd</h2></div><div class="setting-row"><label for="theme">Motyw</label><select id="theme" class="select-pill"><option value="auto">Jak w Home Assistant</option><option value="light">Jasny</option><option value="dark">Ciemny</option></select></div></section>
-      <section class="card settings-card"><div class="card-head-block"><h2>Twoje dane</h2><p>Wspólny inwentarz domowników, zapisany w Home Assistant.</p></div><div class="setting-row"><div><strong>Kopia zapasowa</strong><p class="page-sub">Pobierz wszystkie przedmioty w formacie JSON.</p></div><button class="btn btn-primary" id="export">Eksportuj</button></div>${this._hass?.user?.is_admin?`<div class="setting-row"><div><label for="import"><strong>Import danych</strong></label><p class="page-sub">Wybierz kopię MyStuffPro lub plik items.json ze starej strony (maks. 5 MB).</p></div><input id="import" type="file" accept=".json,application/json"></div><div class="setting-row"><label><input type="checkbox" id="replace"> Zastąp cały inwentarz danymi z pliku</label></div><p class="page-sub">Domyślnie import dopisuje przedmioty. Ponowny import tego samego pliku utworzy duplikaty.</p>`:'<p>Import kopii zapasowej jest dostępny dla administratora.</p>'}</section><p class="app-footer">MyStuffPro 1.0.0</p>`;
+      <section class="card settings-card"><div class="card-head-block"><h2>Twoje dane</h2><p>Wspólny inwentarz domowników, zapisany w Home Assistant.</p></div><div class="setting-row"><div><strong>Kopia zapasowa</strong><p class="page-sub">Pobierz wszystkie przedmioty w formacie JSON.</p></div><button class="btn btn-primary" id="export">Eksportuj</button></div>${this._hass?.user?.is_admin?`<div class="setting-row"><div><label for="import"><strong>Import danych</strong></label><p class="page-sub">Wybierz kopię MyStuffPro lub plik items.json ze starej strony (maks. 5 MB).</p></div><input id="import" type="file" accept=".json,application/json"></div><div class="setting-row"><label><input type="checkbox" id="replace"> Zastąp cały inwentarz danymi z pliku</label></div><p class="page-sub">Domyślnie import dopisuje przedmioty. Ponowny import tego samego pliku utworzy duplikaty.</p>`:'<p>Import kopii zapasowej jest dostępny dla administratora.</p>'}</section><p class="app-footer">MyStuffPro 1.0.1</p>`;
     const theme=this.shadowRoot.querySelector('#theme'); theme.value=this.theme;
     theme.onchange=()=>{this.theme=theme.value;localStorage.setItem('mystuffpro-theme',this.theme);this.applyTheme();};
     this.shadowRoot.querySelector('#export').onclick=async()=>{
