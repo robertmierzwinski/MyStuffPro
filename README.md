@@ -14,7 +14,7 @@ Aktualizacje instaluj przez HACS, a następnie restartuj Home Assistant. W razie
 
 ## Podgląd
 
-![Panel MyStuffPro](docs/preview-desktop.png)
+![Panel MyStuffPro](docs/preview-desktop1.png)
 
 ## Wersje
 
